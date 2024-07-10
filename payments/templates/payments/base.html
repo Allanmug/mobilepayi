@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airtel Payments</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'payments/css/styles.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Airtel Payments</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'collect_money' %}">Collect Money</a></li>
+                <li><a href="{% url 'transfer_money' %}">Transfer Money</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+    <footer>
+        <p>&copy; 2024 Airtel Payments</p>
+    </footer>
+    <script src="{% static 'payments/js/scripts.js' %}"></script>
+</body>
+</html>
