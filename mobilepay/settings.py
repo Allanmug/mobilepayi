@@ -119,7 +119,7 @@ AIRTEL_CLIENT_ID = os.getenv('391ec4efc775-3552-4836-81ea-a5bcc97ce806')
 AIRTEL_CLIENT_SECRET = os.getenv('****************************')
 
 
-
+ 
 # Define the URL that handles the static files served from STATIC_ROOT
 STATIC_URL = '/static/'
 
